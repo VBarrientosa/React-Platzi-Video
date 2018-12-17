@@ -1,9 +1,12 @@
 import React from 'react';
 import {render} from 'react-dom';
 import Media from './playlist/components/media';
+import BitcoinImage from "./images/bitcoin.jpg";
 
-const app = document.getElementById('app');
+
 // const hm = <h1>Hola Mundo!</h1>
-
+const app = document.getElementById("app");
 // ReactDOM.render(que se va a renderzar, donde se va a renderizar);
-render(<Media />, app);
+render(<Media title="Por que aprender React?" author= "Vero Barrientos" image= {BitcoinImage} /> , app);
+
+
